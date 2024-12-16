@@ -1,108 +1,134 @@
-*{
+/* General Styles */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-body{
-  font-family: Arial, sans-serif;
+body {
+  background-color: #F4F5FC; /* Soft background */
+  color: #333333; /* Dark text for readability */
+  line-height: 1.6;
 }
 
-header{
-  background-color: aquamarine;
+/* Header */
+header {
+  background-color: #001F3F; /* Navy Blue */
+  color: #FFFFFF;
+  padding: 10px 0;
 }
 
-header #context{
+#context {
   text-align: center;
-  background-color: rgb(68, 61, 61);
-  width: 100%;
-  padding: 0.5rem;
-  color: white;
+  font-size: 14px;
+  background-color: #003D73; /* Slightly lighter navy */
+  padding: 5px;
 }
 
-.nav{
+.nav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
-  gap: 2rem;
-  height: 4rem;
-}
-
-.logo{
-   width: 12rem;
-   margin-left: 1.5rem;
-   font-size: 2.1rem;
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.search-box{
-  width: 86%;
-  height: 100%;
-}
-
-.search-box input{
-  width: 90%;
-  height: 100%;
-  border-radius: 0.5rem;
-  border: none;
-
-}
-
-.search-box :placeholder-shown{
-  font-size: large;
-  padding: 0.7rem;
-  margin: 0.5rem;
-}
-
-.search-box text{
-  padding: 1rem;
-}
-
-.search-box button{
-  height: 100%;
-  border-radius: 0.5rem;
-  width: 5rem;
-  font-size: large;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-  padding: 0.5rem;
-  font-size: large;
-  justify-content: space-around;
+  padding: 10px 20px;
 }
 
 nav ul a{
   text-decoration: none;
-  color: black;
+}
 
-} 
+nav ul a:hover{
+  color: #FF6F61; 
+}
 
-/* -----------main-home------------- */
+.logo p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FF6F61; /* Brand Color */
+}
 
-.box{
+.search-box {
+  display: flex;
+  gap: 10px;
+  width: 90%;
+}
+
+.search-box input {
+  padding: 8px;
+  border: 2px solid #007ACC;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.search-box button {
+  background-color: #FF6F61;
+  color: #FFFFFF;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+  background-color: #E0574F; /* Darker accent */
+}
+
+.tags {
+  background-color: #003D73;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav-links a.btn {
+  background-color: #FF6F61;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.nav-links a.btn:hover {
+  background-color: #E0574F;
+}
+
+/* Home Section */
+.home {
   position: relative;
 }
 
-.box .image img{
-  min-height: 100%;
+.home .box img {
   width: 100%;
-  object-fit: cover;
+  height: auto;
 }
 
-/* -------------end of main home------------ */
+.home .box {
+  position: relative;
+  text-align: center;
+  color: #FFFFFF;
+}
 
-/* starting of schools  */
-
+/* School Section */
 .school-box{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: blanchedalmond;
+  background-color:#efb247;
 }
 
 .school-card{
@@ -122,9 +148,95 @@ nav ul a{
 
 .school-name a {
   text-decoration: none;
-  color: brown;
-  font-size: large;
+  color: #003D73;
+  font-size: 1.3rem;
 }
 
 
-/* end of schools  */
+
+/* Footer */
+footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  background-color: #003D73;
+  color: #FFFFFF;
+  padding: 20px;
+}
+
+footer h3 {
+  margin-bottom: 10px;
+  color: #FF6F61;
+}
+
+footer a {
+  color: #FFFFFF;
+  font-size: 14px;
+  display: block;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #FF6F61;
+}
+
+.share i {
+  font-size: 20px;
+  margin-right: 10px;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.share i:hover {
+  color: #FF6F61;
+}
+
+.footer-right {
+  text-align: center;
+  background-color: #002F5D;
+  color: #FFFFFF;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .search-box {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .tags {
+    text-align: center;
+  }
+
+  .school-box {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo p {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+}
