@@ -132,7 +132,6 @@ nav ul a:hover{
 .item img{
    width: 100%;
    height: 100%;
-
    object-fit: cover;
    border-radius: 10px;
    transition: transform 0.5s ease-in-out;
@@ -145,19 +144,6 @@ nav ul a:hover{
 
 .item:hover img {
   transform: scale(1.2) ;
-}
-
-@media (max-width: 768px) {
-   .items{
-       flex-direction: column;
-       height: auto;
-   }
-
-   .item img{
-       width: 20rem;
-       height: 20rem;
-       padding: 1rem;
-   }
 }
 
 /* School Section */
@@ -263,6 +249,20 @@ footer a:hover {
   .nav {
     flex-wrap: wrap;
   }
+
+  .items{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 0;
+}
+
+ .item img{
+    width: 20rem;
+    height: 20rem;
+    padding: 1rem;
+}
 
   .search-box {
     width: 100%;
