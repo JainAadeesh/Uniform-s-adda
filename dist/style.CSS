@@ -1,0 +1,157 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #F4F5FC; /* Soft background */
+  color: #333333; /* Dark text for readability */
+  line-height: 1.6;
+}
+
+
+
+.items {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 40rem;
+  background-color: #002F5D;
+}
+
+.item{
+   width: 30rem;
+   height: 30rem;
+   padding: 2rem;
+}
+
+.item img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 10px;
+   transition: transform 0.5s ease-in-out;
+}
+
+.item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+}
+
+.item:hover img {
+  transform: scale(1.2) ;
+}
+
+/* School Section */
+
+.school{
+  text-align: center;
+  padding: 2rem;
+  font-size: 3rem;
+  background-color: #003a7360;
+}
+
+.school h2{
+  color: #f8f5f5;
+  margin-bottom: 1rem;
+  text-shadow: #ddd2d2;
+  font-family: s;
+}
+
+.school-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color:white;
+  padding: 2rem;
+}
+
+.school-card{
+  margin-top: 1.5rem;
+  width: 30%;
+  height: auto;
+  text-align: center;
+  transition: transform 0.5s ease-in-out; 
+  
+}
+
+.school-card :hover{
+  transform: scale(1.1);
+}
+
+.school-name{
+  padding: 1.3rem;
+}
+
+.school-name a {
+  text-decoration: none;
+  color: #003D73;
+  font-size: 1.3rem;
+}
+
+.school-img img{
+  width: 13rem;
+  height: auto;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .items{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 0;
+}
+
+ .item img{
+    width: 20rem;
+    height: 20rem;
+    padding: 1rem;
+}
+
+  .search-box {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .tags {
+    text-align: center;
+  }
+
+  .school-box {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo p {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+}
