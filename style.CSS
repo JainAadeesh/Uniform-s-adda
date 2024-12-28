@@ -112,27 +112,11 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
   /* Header */
- 
-  .flex {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav ul {
-    flex-direction: column;
-    display: none;
-    background-color: rgba(8, 29, 66, 0.426);
-    width: 100%;
-  }
-
-  #nav-links.show {
-    display: flex;
-  }
-
-  nav ul li {
-    text-align: center;
-    margin: 10px 0;
-  }
+   
+  #ul{
+    font-size: small;
+   }
+  
 
   /* Section */
   
