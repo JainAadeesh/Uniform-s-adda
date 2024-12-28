@@ -28,7 +28,7 @@
         /* border: 1px solid black; */
         width: 25%;
         padding: 0.5rem;
-        text-align: center;
+        justify-items: center;
         margin: 1rem;
     }
 
@@ -45,5 +45,3 @@
     .s-name{
         padding: 0.rem;
     }
-
- 

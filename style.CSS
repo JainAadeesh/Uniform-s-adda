@@ -110,7 +110,9 @@ body {
 
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 768px) 
+
+{
   /* Header */
    
   #ul{
@@ -151,8 +153,57 @@ body {
   .contents{
     padding: 20px;
   }
-  
+
+  .w-full.h-40.bg-sky-200.flex.justify-between {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .text-4xl.font-serif.px-36.py-16 {
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .px-12.mt-16 {
+    margin-top: 10px;
+    padding: 5px;
+  }
+
+  aside {
+    width: 100%;
+    position: relative;
+  }
+
+  ul.p-3.flex.flex-col.gap-4 {
+    gap: 8px;
+    padding: 5px;
+  }
+
+  ul select {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  main.w-full.h-auto.bg-sky-200.text-white.p-3.flex.flex-wrap.justify-center.gap-3 {
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  main .pic img {
+    width: 100%;
+    height: auto;
+  }
+
+  main .text-black.text-center.p-1 {
+    font-size: 14px;
+    padding: 5px;
+  }
 }
+  
+
 
 @media (max-width: 480px) {
   nav ul li a {
