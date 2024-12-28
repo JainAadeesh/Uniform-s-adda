@@ -114,7 +114,9 @@ body {
   /* Header */
    
   #ul{
-    font-size: 0.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
    }
   
 
