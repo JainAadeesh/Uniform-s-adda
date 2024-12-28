@@ -1,4 +1,4 @@
-/* General Styles */
+/* General Styles
 * {
   margin: 0;
   padding: 0;
@@ -47,7 +47,7 @@ body {
 
 /* School Section */
 
-.school{
+/* .school{
   text-align: center;
   padding: 2rem;
   font-size: 3rem;
@@ -98,7 +98,7 @@ body {
   width: 13rem;
   height: auto;
   text-align: center;
-}
+} */
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -154,4 +154,4 @@ body {
   .nav-links a {
     font-size: 14px;
   }
-}
+} */
