@@ -5,36 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uniform Adda</title>
     <link rel="stylesheet" href="school.css">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.CSS">
     <script src="https://kit.fontawesome.com/2616bc9d69.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
       <!-- Starting of header -->
-  <header>
-    <p id="context">Uniforms are the way to represent us! Contact Us at +9264931896</p>
-    <nav>
-      <div class="nav">
-        <div class="logo">
-          <p>Uniform Adda</p>
-        </div>
-        <div class="search-box">
-          <input type="text" placeholder="Search...">
-          <button>Shop</button>
-        </div> 
-      </div>
-      <div class="tags">
-        <ul class="nav-links">
-          <li><a href="index.HTML">Home</a></li>
-          <li><a href="school.html">Schools</a></li>
-          <li><a href="dress.html">Uniforms</a></li>
-          <li><a href="#">Track Order</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="#" class="btn login">Login</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+      <header class="bg-sky-950 text-neutral-50 p-3">
+        <p class="bg-sky-900 text-center text-sm p-1 ">Uniforms are the way to represent us! Contact Us at +9264931896</p>
+        <nav>
+          <div class="flex justify-between items-center px-3 py-4">
+            <div>
+              <p  class="text-2xl font-bold text-red-400 w"> <a href="index.html">Uniform Adda</a> </p>
+            </div>
+            <div class="flex gap-3 w-10/12">
+              <input class="p-2 bg-blue-200 text-black rounded w-full" type="text"placeholder="Search... ">
+              <button class="bg-red-400 text-white px-2 py-4 rounded cursor-pointer hover:text-red-400">Shop</button>
+            </div> 
+          </div>
+          <div class="bg-sky-900 " >
+            <ul class=" list-none flex justify-center gap-5 p-3" id="nav-links">
+              <li><a href="index.HTML" class="no-underline hover:text-red-400">Home</a></li>
+              <li><a href="school.html" class="no-underline hover:text-red-400" >School</a></li>
+              <li><a href="dress.html" class="no-underline hover:text-red-400">Uniforms</a></li>
+              <li><a href="#" class="no-underline hover:text-red-400">Track Order</a></li>
+              <li><a href="about.html" class="no-underline hover:text-red-400">About Us</a></li>
+              <li><a href="contact.html" class="no-underline hover:text-red-400">Contact Us</a></li>
+              <li><a href="login.html" class="no-underline hover:text-red-400">Login</a></li>
+            </ul>  
+          </div>
+        </nav>
+      </header>
   <!-- End of header -->
 
   <section class="schools">
@@ -113,43 +115,45 @@
   </section>
 
    <!-- starting of footer  -->
-  <footer class="footer">
-    <div class="content">
-        <h3>Why Choose Us</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p><br>
-        <div class="share">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-twitter"></i>
-        </div>
+   <footer>
+    <div id="contents" class="h-80 grid gap-5 bg-sky-900 text-white p-5 grid-cols-4">
+      <div class="contents">
+          <h3 class="text-red-400 text-center mb-3 text-xl">Why Choose Us</h3>
+          <p class="text-center text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing.</p><br>
+          <div class="text-2xl text-center">
+              <i class="fa-brands fa-facebook cursor-pointer  p-2"></i>
+              <i class="fa-brands fa-instagram cursor-pointer  p-2"></i>
+              <i class="fa-brands fa-youtube cursor-pointer  p-2"></i>
+              <i class="fa-brands fa-twitter cursor-pointer  p-2"></i>
+          </div>
+      </div>
+      <div class="contents">
+          <h3 class="text-red-400 text-center mb-3 text-xl">Links</h3>
+          <a class="hover:text-red-400 block text-center text-lg no-underline" href="#home">Home</a>
+          <a class="hover:text-red-400 block text-center text-lg no-underline"href="#school">School</a>
+          <a class="hover:text-red-400 block text-center text-lg no-underline"href="#gallery">Uniform</a>
+          <a class="hover:text-red-400 block text-center text-lg no-underline"href="#treak order">Track Order</a>
+          <a class="hover:text-red-400 block text-center text-lg no-underline"href="#contact">Contact Us</a>
+          <a class="hover:text-red-400 block text-center text-lg no-underline"href="#about us">About Us</a>
+      </div>
+  
+      <div class="contents">
+          <h3 class="text-red-400 text-center mb-3 text-xl">POLICIES</h3>
+          <a class="block text-center text-lg no-underline hover:text-red-400" href="#">Privacy Policy</a>
+          <a class="block text-center text-lg no-underline hover:text-red-400" href="#">Return Policy</a>
+          <a class="block text-center text-lg no-underline hover:text-red-400" href="#">Shipping Policy</a>
+          <a class="block text-center text-lg no-underline hover:text-red-400" href="#">Refund Policy</a>
+          <a class="block text-center text-lg no-underline hover:text-red-400" href="#">Cancellatons</a>
+          <a class="block text-center text-lg no-underline hover:text-red-400" href="#">Payments</a>
+      </div>
+      <div class="contents">
+          <h3 class="text-red-400 text-center mb-3 text-xl">About Us</h3>
+          <p class="text-center text-lg">Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
     </div>
-    <div class="link">
-        <h3>Links</h3>
-        <a href="#home">Home</a>
-        <a href="#school">School</a>
-        <a href="#gallery">Uniform</a>
-        <a href="#treak order">Track Order</a>
-        <a href="#contact">Contact Us</a>
-        <a href="#about us">About Us</a>
-    </div>
-
-    <div>
-        <h3>POLICIES</h3>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Return Policy</a>
-        <a href="#">Shipping Policy</a>
-        <a href="#">Refund Policy</a>
-        <a href="#">Cancellatons</a>
-        <a href="#">Payments</a>
-    </div>
-    <div class="ournews">
-        <h3>About Us</h3>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-    </div>
-   
- </footer>
-  <div class="footer-right"><p>2024@copyright aadeesh jain</p></div>
+      <div class="text-center bg-sky-950 text-white p-2 text-sm min-w-full"><p>2024@copyright aadeesh jain</p></div>
+    
+  </footer>
   <!-- end of fottter -->
 
 </body>
